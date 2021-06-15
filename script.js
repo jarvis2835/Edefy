@@ -12,8 +12,8 @@ const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
 // Song titles
-const songs = ['Kill this love', 'Alcohol free', '2 much', 'Butter', 'Likey', 'takeaway', 'ddu du du', 'For you',
- 'Haunting', 'Hold on', 'Hands to myself', 'Fefe', 'Godzilla', 'Love money party', 'Angana Morey'];
+const songs = ['Kill-this-love', 'Alcohol-free', '2-much', 'Butter', 'Likey', 'takeaway', 'ddu-du-du', 'For-you',
+ 'Haunting', 'Hold-on', 'Hands-to-myself', 'Fefe', 'Godzilla', 'Love-money-party', 'Angana-Morey'];
 
 // Keep track of song
 let songIndex = 0;

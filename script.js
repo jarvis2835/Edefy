@@ -34,6 +34,7 @@ function playSong() {
   playBtn.querySelector('i.fas').classList.add('fa-pause');
 
   audio.play();
+  changeBackground();
 }
 
 // Pause song
@@ -149,6 +150,17 @@ function DurTime (e) {
 	durTime.innerHTML = min_d +':'+ sec_d;
 		
 };
+
+function changeBackground() {
+	document.body.style.background = 'linear-gradient(' + '0deg, ' + random_rgba() + ', ' + random_rgba() + ')';
+}
+
+function random_rgba() {
+    var o = Math.round, r = Math.random, s = 255;
+    return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
+}
+
+changeBackground()
 
 // Event listeners
 playBtn.addEventListener('click', () => {
